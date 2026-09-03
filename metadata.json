@@ -1,0 +1,7 @@
+{
+  "name": "Daftar",
+  "description": "A scholarly codex notebook and lecture recording studio with local-first vault, crash-safe audio, Google Drive PKCE sync, iCloud status diagnostics, encrypted backups, and Arabic RTL PDF export.",
+  "requestFramePermissions": ["microphone", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

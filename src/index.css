@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --notion-bg: #FFFFFF;
+    --notion-sidebar-bg: #F7F6F3;
+    --notion-sidebar-hover: #EFEFEF;
+    --notion-text: #37352F;
+    --notion-text-muted: #787774;
+    --notion-text-light: #9B9A97;
+    --notion-border: #E9E9E8;
+    --notion-border-dark: #D4D4D2;
+    --notion-blue: #2383E2;
+    --notion-blue-hover: #1D6FB8;
+    --notion-callout-bg: #F1F1EF;
+    --notion-selection: rgba(35, 131, 226, 0.15);
+  }
+
+  body {
+    font-family: 'IBM Plex Sans Arabic', -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #37352F;
+    background-color: #FFFFFF;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Notion-style Typography classes */
+  .font-notion {
+    font-family: -apple-system, BlinkMacSystemFont, 'Plus Jakarta Sans', 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  .font-scholarly {
+    font-family: 'Amiri', serif;
+  }
+
+  .font-mono {
+    font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Bi-directional text isolation */
+bdi, .bdi-isolate {
+  unicode-bidi: isolate;
+}
+
+/* Notion-style sleek scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4D4D2;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9B9A97;
+}
+
+/* KaTeX styling */
+.katex {
+  font-size: 1.05em !important;
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+}
+
+/* iOS safe-area insets */
+.safe-top {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.safe-left {
+  padding-left: env(safe-area-inset-left, 0px);
+}
+.safe-right {
+  padding-right: env(safe-area-inset-right, 0px);
+}
+
